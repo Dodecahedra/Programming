@@ -1,4 +1,5 @@
-import java.util.Iterator;
+package K2;
+
 import java.util.Scanner;
 
 public class BAPC10I {

@@ -1,47 +1,12 @@
+package K2;
+
 import java.util.Scanner;
 
 public class EAPC13B {
     public static void main(String args[]) {
         new EAPC13B().run();
     }
-    class Vector {
-        int x;
-        int y;
 
-        public Vector(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-        /*
-         * Adds vector v to this vector.
-         */
-        public void add(Vector v) {
-            this.x += v.x;
-            this.y += v.y;
-        }
-        /*
-         * subtracts the vector v from this vector.
-         */
-        public void subtract(Vector v) {
-            this.x -= v.x;
-            this.y -= v.y;
-        }
-        public void dot(Vector v) {};
-        public void cross(Vector v) {};
-        /*
-         * Returns the length of this vector.
-         */
-        public float length() {
-            return (float) Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
-        }
-
-        /*
-         * Prints this vector.
-         */
-        public void print() {
-            System.out.println("("+this.x + ", " + this.y + ")");
-        }
-    }
 
     void run() {
         Scanner sc = new Scanner(System.in);
@@ -49,7 +14,7 @@ public class EAPC13B {
         for (int i = 0; i < cases; i++) {
             int n = sc.nextInt();
             int B = sc.nextInt();
-            Vector P_listener = new Vector(sc.nextInt(), sc.nextInt());
+            int x = sc.nextInt(); int y = sc.nextInt();
             double[] r = new double[n];
             float R_sum = 0;
             for (int j = 0; j < n; j++) {
