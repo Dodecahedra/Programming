@@ -1,4 +1,4 @@
-package Codeforce; /**
+ /**
  * Solved on: https://codeforces.com
  * Link: http://codeforces.com/problemset/problem/894/A
  */
@@ -21,7 +21,7 @@ public class QAQ {
                 if (s.charAt(i-1)=='Q') {
                     M[i][0] = M[i-1][0] + 1; //Amount of Q's + 1
                     M[i][1] = M[i-1][1]; //Amount of QA's stays the same
-                    M[i][2] = M[i-1][1] + M[i-1][2]; //Amount of Codeforce.QAQ's
+                    M[i][2] = M[i-1][1] + M[i-1][2]; //Amount of QAQ's
                 } else if (s.charAt(i-1)=='A') {
                     M[i][0] = M[i-1][0]; //Amount of Q's stays the same
                     M[i][1] = M[i-1][0] + M[i-1][1]; //Amount of Q's + amount of QA's
